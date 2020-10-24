@@ -2,7 +2,7 @@
 
 # Modelo Conceptual
 
-<img src="./assets/conceptual_model.png" width="60%">
+<img src="./assets/conceptual_model.png" width="35%">
 
 # Modelo Lógico
 

@@ -2,6 +2,8 @@
 
 # Modelo Conceptual
 
+<img src="./assets/conceptual_model.png" width="60%">
+
 # Modelo Lógico
 
 <img src="./assets/logic_model.png" width="60%">

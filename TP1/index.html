@@ -7,65 +7,73 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="reveal.js/css/reveal.css">
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
-  <link rel="stylesheet" href="reveal.js/css/theme/serif.css" id="theme">
-  <!-- Printing and PDF exports -->
-  <script>
-    var link = document.createElement( 'link' );
-    link.rel = 'stylesheet';
-    link.type = 'text/css';
-    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
-    document.getElementsByTagName( 'head' )[0].appendChild( link );
-  </script>
-  <!--[if lt IE 9]>
-  <script src="reveal.js/lib/js/html5shiv.js"></script>
-  <![endif]-->
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/white.css" id="theme">
 </head>
 <body>
   <div class="reveal">
     <div class="slides">
 
 
-<section><section id="repositório-da-situação-pandémica-na-eueea" class="title-slide slide level1"><h1>Repositório da situação pandémica na EU/EEA</h1></section><section id="modelo-conceptual" class="slide level2">
+<section>
+<section id="repositório-da-situação-pandémica-na-eueea" class="title-slide slide level1">
+<h1>Repositório da situação pandémica na EU/EEA</h1>
+
+</section>
+<section id="modelo-conceptual" class="slide level2">
 <h2>Modelo Conceptual</h2>
-</section><section id="modelo-lógico" class="slide level2">
+</section>
+<section id="modelo-lógico" class="slide level2">
 <h2>Modelo Lógico</h2>
-</section><section id="modelo-físico" class="slide level2">
+</section>
+<section id="modelo-físico" class="slide level2">
 <h2>Modelo Físico</h2>
-</section><section id="trigger" class="slide level2">
+</section>
+<section id="trigger" class="slide level2">
 <h2>Trigger</h2>
-</section><section id="povoação-das-tabelas" class="slide level2">
+</section>
+<section id="povoação-das-tabelas" class="slide level2">
 <h2>Povoação das Tabelas</h2>
-</section><section id="queries-sql" class="slide level2">
+</section>
+<section id="queries-sql" class="slide level2">
 <h2>Queries SQL</h2>
-</section><section id="processo" class="slide level2">
+</section>
+<section id="processo" class="slide level2">
 <h2>Processo</h2>
 </section></section>
     </div>
   </div>
 
-  <script src="reveal.js/lib/js/head.min.js"></script>
-  <script src="reveal.js/js/reveal.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//dist/reveal.js"></script>
+
+  // reveal.js plugins
+  <script src="https://unpkg.com/reveal.js@^4//plugin/notes/notes.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/search/search.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/zoom/zoom.js"></script>
 
   <script>
 
       // Full list of configuration options available at:
-      // https://github.com/hakimel/reveal.js#configuration
+      // https://revealjs.com/config/
       Reveal.initialize({
         // Push each slide change to the browser history
         history: true,
 
-        // Optional reveal.js plugins
-        dependencies: [
-          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
-          { src: 'reveal.js/plugin/notes/notes.js', async: true }
+        // reveal.js plugins
+        plugins: [
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
         ]
       });
     </script>

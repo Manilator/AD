@@ -85,3 +85,10 @@ call count_country_total_deaths('AT');
 ```
 
 # Processo
+
+Para chegar ao resultado obtido comecei por desenhar um modelo conceptual que
+organiza-se os casos diariamente e semanalmente por país. Com esse modelo
+estruturei o lógico para definir os tipos que iria utilizar e de seguida
+gerei o modelo fisico com base neste último.
+Tendo o modelo fisico gerado e conetado à base de dados, utilizei o Table Data
+Import Wizard do MySQL Workbench para importar os dados dos .csv para as tabelas.
